@@ -271,7 +271,8 @@
         </div>
 
 
-        <p><em><strong><a href="https://www.researchgate.net/profile/Abrar-Islam-4" target="_blank">Research Gate</a> </strong></em></p>
+        <!-- <p><em><strong><a href="https://www.researchgate.net/profile/Abrar-Islam-4" target="_blank">Research Gate</a> </strong></em></p> -->
+        <p style="color:blue;"><a href="https://scholar.google.com/citations?user=5ezRHHsAAAAJ&hl=en" target="_blank"> <strong> Google Scholar </a></strong></p>
 
 		<div class="container">
 
@@ -283,12 +284,14 @@
 	                <ul > 
 	                  <li><i class="icofont-rounded-right"></i> <strong>Artificial Intelligence</strong>  </li>
 	                  <li><i class="icofont-rounded-right"></i> <strong>Machine Learning</strong> </li>
+                    <li><i class="icofont-rounded-right"></i> <strong>AI in Biology and Healthcare </strong> </li>
 	              </div>
 
 	              <div class="col content" data-aos="fade-left">
 	                <ul>
 	                  <li><i class="icofont-rounded-right"></i> <strong>Deep Neural Network</strong> </li>
 	                  <li><i class="icofont-rounded-right"></i> <strong>Reinforcement Learning</strong> </li>
+                    <li><i class="icofont-rounded-right"></i> <strong>Computer Vision</strong> </li>
 	                </ul>
 	              </div>
 	          </div>
@@ -442,19 +445,42 @@
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <!--li data-filter="*" class="filter-active">All</li-->
+              <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">AI &amp; Computer Vision</li>
-              <li data-filter=".filter-card">Hardware  &amp; Software Integrating</li>
-              <!--li data-filter=".filter-web">Others</li-->
+              <li data-filter=".filter-card">Point Cloud</li>
+              <!-- <li data-filter=".filter-web">Hardware  &amp; Software Integrating</li> -->
+              <li data-filter=".filter-web">Others</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
+          <div class="col-lg-6 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/unity_pointcloud.PNG" class="img-fluid" alt="">
+              <p></p>
+              <p class="text-center"><strong>TerraScan-Replacement-using-Unity</strong></p>
+
+              <ul class="">
+                <li>The algorithm of depth measurement using a stereo camera was used.</li>
+                <li>Two sequential images were selected from several close imgaes captured with Ladibug 360 camera . </li>
+                <li>Depth was calculated considering the two sequential images as 'left' and 'right' images of a stereo camera. </li>
+                <li>The two camera positions were given and from the depth calculation and also calculating x, y co-ordinate the latitude and longitude of the sign were calculated. </li>
+                <li>QGIS was used to get the groundtruth of the traffic sign and to compare with the predicted result.</li>
+                <li>Later the value of yaw, head and pitch were also used to get the rotational angle matrix and get a better result.</li>
+              </ul>
+              <div class="portfolio-links">
+                <a href="https://github.com/Abrar-Islam-Oitijjho/Distance-Measurement-Using-Stereo-Vision-Algorithm/raw/main/traffic_sign_position_determination.pptx" target="_blank" title="Presentation"><i class="bx bx-file-blank"></i></a>
+                <a href="assets/img/projects/unity_pointcloud.PNG" data-gall="portfolioGallery" class="venobox" title="TerraScan-Replacement-using-Unity"> <i class="bx bx-plus"></i></a>
+                <a href="https://github.com/Abrar-Islam-Oitijjho/TerraScan-Replacement-using-Unity-" target="_blank" title="Source Code"><i class="bx bxl-github"></i></a>
+              </div>
+            </div>
+          </div>
+
           <div class="col-lg-6 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/projects/csgo_project.PNG" class="img-fluid" alt="">
+              <img src="assets/img/projects/csgo_project2.PNG" class="img-fluid" alt="">
               <p></p>
               <p class="text-center"><strong>CS: GO Action Recognition Using Transfer Learning Models and Data Collection Automation API</strong></p>
 
@@ -495,7 +521,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-6 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/projects/pointcloud.PNG" class="img-fluid" alt="">
               <p></p>
@@ -538,7 +564,7 @@
             </div>
           </div>
 
-          <!---div class="col-lg-6 col-md-6 portfolio-item filter-card">
+          <!---div class="col-lg-6 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/projects/selfdriving.PNG" class="img-fluid" alt="">
               <p></p>
@@ -556,7 +582,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-6 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/projects/pfl.png" class="img-fluid" alt="">
               <p></p>
@@ -574,7 +600,7 @@
             </div>
           </div!--->
 
-          <div class="col-lg-6 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-6 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/projects/DLD_calculator.jpg" class="img-fluid" alt="">
               <p></p>
