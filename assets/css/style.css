@@ -1223,3 +1223,10 @@ body.dark-mode {
 .dark-mode .testimonial-item h4 {
   color: #e6e6e6 !important;
 }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1500px !important;
+  }
+}
+
