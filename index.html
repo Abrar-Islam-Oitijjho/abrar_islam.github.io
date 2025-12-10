@@ -33,9 +33,39 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  
+  <style>
+    /* Optional dark/light toggle */
+    body.dark-mode {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    .dark-mode .card, .dark-mode .portfolio-wrap {
+      background: #1e1e1e;
+    }
+
+    .dark-mode a {
+      color: #81a1c1;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      cursor: pointer;
+      z-index: 1000;
+    }
+  </style>
+  
 </head>
 
 <body>
+
+  <!-- Dark/Light Toggle -->
+  <div class="theme-toggle" onclick="document.body.classList.toggle('dark-mode')">
+    🌙
+  </div>
 
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
