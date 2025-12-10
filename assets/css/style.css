@@ -1224,6 +1224,22 @@ body.dark-mode {
   color: #e6e6e6 !important;
 }
 
+/* Dark mode for skill cards */
+.dark-mode .skill-card {
+  background: #1b1f24 !important;  /* dark background matching other sections */
+  color: #e6e6e6 !important;       /* light text */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3) !important;
+}
+
+.dark-mode .skill-card p {
+  color: #e6e6e6 !important;
+}
+
+.dark-mode .skill-card h5 {
+  color: #c9d1d9 !important;
+}
+
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1500px !important;
