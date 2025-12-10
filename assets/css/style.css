@@ -1246,3 +1246,20 @@ body.dark-mode {
   }
 }
 
+
+.resume-item a {
+    color: #1ea7e1; /* suitable for light mode */
+    text-decoration: none;
+}
+
+body.dark-mode .resume-item a {
+    color: #63c2f5; /* softer, visible in dark mode */
+}
+
+.resume-item a:hover {
+    color: #0d82c1; /* hover effect */
+}
+
+body.dark-mode .resume-item a:hover {
+    color: #a0d9ff; /* hover in dark mode */
+}
