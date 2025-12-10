@@ -1248,18 +1248,18 @@ body.dark-mode {
 
 
 .resume-item a {
-    color: #1ea7e1; /* suitable for light mode */
+    color: #0d5c8a; /* darker blue for light mode */
     text-decoration: none;
 }
 
 body.dark-mode .resume-item a {
-    color: #63c2f5; /* softer, visible in dark mode */
+    color: #1a90d0; /* darker but visible in dark mode */
 }
 
 .resume-item a:hover {
-    color: #0d82c1; /* hover effect */
+    color: #093f5f; /* darker hover for light mode */
 }
 
 body.dark-mode .resume-item a:hover {
-    color: #a0d9ff; /* hover in dark mode */
+    color: #4a9fe0; /* darker hover in dark mode */
 }
