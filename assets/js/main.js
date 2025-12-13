@@ -13,7 +13,6 @@
     typed_strings = typed_strings.split(',')
     new Typed('.typed', {
       strings: typed_strings,
-      startDelay: 1500,
       loop: true,
       typeSpeed: 40,
       backSpeed: 30,
@@ -192,55 +191,3 @@
   });
 
 })(jQuery);
-
-
-document.addEventListener("DOMContentLoaded", function () {
-
-  let currentCategory = "genai";
-  let currentIndex = 0;
-
-  const projects = document.querySelectorAll(".project-item");
-  const categoryButtons = document.querySelectorAll(".category-btn");
-
-  function getCurrentProjects() {
-    return Array.from(projects).filter(p =>
-      p.classList.contains(currentCategory)
-    );
-  }
-
-  function showProject(index) {
-    projects.forEach(p => p.classList.remove("active"));
-    const currentProjects = getCurrentProjects();
-
-    if (currentProjects.length > 0) {
-      currentProjects[index].classList.add("active");
-    }
-  }
-
-  document.querySelector(".next-btn").addEventListener("click", () => {
-    const currentProjects = getCurrentProjects();
-    currentIndex = (currentIndex + 1) % currentProjects.length;
-    showProject(currentIndex);
-  });
-
-  document.querySelector(".prev-btn").addEventListener("click", () => {
-    const currentProjects = getCurrentProjects();
-    currentIndex =
-      (currentIndex - 1 + currentProjects.length) % currentProjects.length;
-    showProject(currentIndex);
-  });
-
-  categoryButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      categoryButtons.forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-
-      currentCategory = btn.dataset.category;
-      currentIndex = 0;
-      showProject(currentIndex);
-    });
-  });
-
-  // Initial load
-  showProject(0);
-});
