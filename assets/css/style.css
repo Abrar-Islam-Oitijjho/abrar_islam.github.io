@@ -1263,3 +1263,21 @@ body.dark-mode .resume-item a {
 body.dark-mode .resume-item a:hover {
     color: #4a9fe0; /* darker hover in dark mode */
 }
+
+
+.pub {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.pub .icon {
+  font-size: 24px;
+  color: #149ddd; /* match your theme */
+  margin-right: 15px;
+  margin-top: 4px;
+}
+
+.pub p {
+  margin: 0;
+}
