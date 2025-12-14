@@ -397,17 +397,11 @@
               <p class="text-center"><strong>Multimodal Fashion Assistant</strong></p>
 
               <p>
-                The Multimodal Fashion Assistant is a retrieval and reasoning system built on two models: SigLIP2-base for embeddings and Qwen-VL (2B) for multimodal 
-                understanding. SigLIP2 generates image and text embeddings for similarity search, and Qwen-VL interprets the user query, extracts product attributes, 
-                and handles reasoning tasks. The system supports image search, text search, and combined multimodal search. Users can upload a product photo, 
-                describe an item, or refine the request through follow-up prompts. The backend then returns the closest matching products based on visual and semantic 
-                similarity. 
-                
-                In addition to fashion retrieval, the system can read text from images. It can extract items from a photographed shopping list by 
-                interpreting the text directly from the image, which allows it to act like an OCR-style component without using a separate OCR engine. 
-                
-                This project is built as a practical and fast backend module. It requires no dedicated front end and focuses on accurate search, flexible input handling,
-                and efficient reasoning over fashion data.
+                Built a multimodal retrieval and reasoning backend for fashion search using SigLIP2-base embeddings and Qwen-VL (2B). 
+                The system supports image, text, and combined queries, allowing users to retrieve products by uploading photos, describing items, or 
+                refining intent through follow-up prompts. Implemented semantic and visual similarity search to return closest matching products with attribute-level 
+                reasoning. Extended the pipeline to extract items directly from photographed shopping lists using vision–language understanding without a separate 
+                OCR engine. Designed as a fast, modular backend focused on accurate retrieval, flexible inputs, and low-latency reasoning.
              </p>
 
               
@@ -420,15 +414,14 @@
 
           <div class="col-lg-6 col-md-6 portfolio-item filter-ts">
             <div class="portfolio-wrap">
-              <img src="M_Dendogram_NIRS_measures.png" class="img-fluid" alt="">
+              <img src="assets/img/projects/M_Dendogram_NIRS_measures.png" class="img-fluid" alt="">
               <p></p>
               <p class="text-center"><strong> Time Series Covariance Pattern Analysis </strong></p>
               <p>
-                 This repository provides tools for analyzing time-series EEG and physiological signals using semi-supervised machine learning. 
-                 It focuses on uncovering hidden covariance patterns, performing variable clustering, and conducting subgroup analysis based on signal characteristics 
-                 across different resolutions. The code includes preprocessing, scaling, K-means and hierarchical clustering, PCA, and RAP-based segmentation, 
-                 enabling researchers to explore complex temporal relationships and discover meaningful signal patterns. This work has been published in 
-                 MDPI's Bioengineering.
+                 Developed a semi-supervised analysis pipeline to uncover latent covariance structures in multivariate EEG and physiological time-series data across 
+                 multiple temporal resolutions. Implemented preprocessing, normalization, PCA, and both K-means and hierarchical clustering to group variables based on 
+                 shared temporal behavior. Integrated RAP-based segmentation to enable subgroup analysis and reveal resolution-dependent signal interactions. 
+                 The framework supports systematic exploration of complex temporal relationships and has been published in MDPI Bioengineering.
               </p>
               <div class="portfolio-links">
                 <a href="https://www.mdpi.com/1424-8220/25/3/908" target="_blank" title="Associated Publication"><i class="bx bx-file-blank"></i></a>
@@ -445,12 +438,10 @@
               <p class="text-center"><strong>ARIMA Modeling on EEG Time-Series Data</strong></p>
 
               <p>
-                This project builds a full ARIMA-based time-series analysis pipeline for EEG time series, ICP, AMP, and RAP signals. It runs stationarity checks, 
-                performs ARIMA modeling, generates residual diagnostics, plots ACF and PACF of residuals, and evaluates differences between clean and artifact-affected 
-                segments. The workflow processes every patient and every physiological parameter, produces plots and summary tables, and stores all metrics for later 
-                statistical comparison. The goal is to characterize RAP behavior, identify artifact patterns, and support downstream modeling of cerebral compensatory 
-                reserve in TBI data. The project offers a streamlined workflow for researchers and practitioners to extract meaningful insights from complex 
-                EEG time series datasets. This work has been published in MDPI's Sensors. 
+                Built a full ARIMA-based analysis pipeline for multivariate EEG, time-series data (in TBI patients). Automated stationarity testing, model selection, 
+                residual diagnostics, and ACF/PACF analysis across all patients and signal types. Systematically compared clean and artifact-affected segments to 
+                quantify structural differences and identify artifact signatures in RAP behavior. Generated reproducible plots and summary tables to support downstream 
+                statistical analysis and modeling of time series. The methodology and findings have been published in MDPI Sensors.
               </p>
               <div class="portfolio-links">
                 <a href="https://www.mdpi.com/1424-8220/25/2/586" target="_blank" title="Associated Publication"><i class="bx bx-file-blank"></i></a>
@@ -466,17 +457,11 @@
               <p></p>
               <p class="text-center"><strong>Retinal OCT Disease Classification</strong></p>
               <p>
-                This project develops a deep learning pipeline for classifying retinal OCT images into four disease categories. The workflow includes sample 
-                visualization, image preprocessing, stratified train–test splitting, and real-time data augmentation to improve robustness. A pretrained VGG19 
-                backbone is used as a fixed feature extractor, and a custom CNN classifier head is added to learn discriminative features specific to retinal pathology. 
-                The model is trained with checkpointing to preserve the best weights, and training dynamics are monitored through accuracy and loss curves. 
-                Final evaluation on a held-out test set provides a clear measure of real-world performance, demonstrating an effective end-to-end solution for automated 
-                retinal disease detection.
-
-                The proposed self-developed CNN model is comparatively smaller and simpler along with the use of Lime that introduces Explainable AI to the study and 
-                helps to increase the interpretability of the model. This addition will be an asset to the medical experts for getting major and detailed information and
-                 will help them in making final decisions and will also reduce the opacity and vulnerability of the conventional deep learning models.This work has been 
-                 published in IEEE Conference.
+                Developed an end-to-end deep learning pipeline to classify retinal OCT images into four disease categories. Implemented preprocessing, 
+                stratified data splitting, and real-time augmentation to improve generalization. Used a pretrained VGG19 backbone as a fixed feature extractor 
+                with a lightweight custom CNN head to learn pathology-specific representations. Tracked training dynamics with loss and accuracy monitoring and 
+                evaluated performance on a held-out test set. Integrated LIME-based explainability to provide case-level model interpretations, improving transparency 
+                and clinical interpretability. The work has been published in an IEEE conference.
               </p>
               <div class="portfolio-links">
               	<a href="https://ieeexplore.ieee.org/abstract/document/9718400" target="_blank" title="Associated Publication"><i class="bx bx-file-blank"></i></a>
@@ -491,15 +476,13 @@
               <img src="assets/img/projects/action_recognition_model_diagram.JPG" class="img-fluid" alt="">
               <p></p>
               <p class="text-center"><strong>Action Recognition of CS:GO Counter-Strike</strong></p>
-              <ul class="">
-                This project focuses on real-time action recognition in Counter Strike: Global Offensive. The system identifies four key in-game events — kill, death, 
-                smoke, and no action — using multiple deep learning architectures. Five transfer learning models (VGG16, Xception, InceptionV3, Inception-ResNet-V2, 
-                ResNet152-V2) are evaluated alongside a custom neural network to determine the best performer.
-
-                The pipeline is designed to classify actions frame by frame, support real-time inference, and generate structured outputs for downstream prediction 
-                models. It also includes an automated module for collecting and processing gameplay video, making it easier to scale datasets and measure action 
-                frequency across matches.This work has been published in IEEE Conference. 
-              </ul>
+              <p>
+                Developed a real-time computer vision system to recognize in-game actions in Counter-Strike: Global Offensive at the frame level. 
+                Classified four event types (kill, death, smoke, no action) using multiple deep learning architectures, including VGG16, Xception, InceptionV3, 
+                Inception-ResNet-V2, ResNet152-V2, and a custom CNN. Evaluated models to identify the best trade-off between accuracy and inference speed for real-time 
+                deployment. Built an automated gameplay video collection and preprocessing pipeline to scale dataset generation and enable structured action statistics 
+                for downstream analytics. The work has been published in an IEEE conference.
+              </p>
               <div class="portfolio-links">
                 <a href="https://ieeexplore.ieee.org/abstract/document/9608407" target="_blank" title="Associated Publication"><i class="bx bx-file-blank"></i></a>
                 <a href="assets/img/projects/action_recognition_model_diagram.JPG" data-gall="portfolioGallery" class="venobox" title="System model diagram"> <i class="bx bx-plus"></i></a>
