@@ -397,9 +397,17 @@
               <p class="text-center"><strong>Multimodal Fashion Assistant</strong></p>
 
               <p>
-                A backend-focused multimodal fashion retrieval and reasoning system that supports image-based, text-based, and joint queries. 
-                The system leverages joint embedding spaces for fast similarity search and a vision-language model for attribute extraction, query understanding, 
-                and multi-turn refinement, enabling accurate and flexible fashion item retrieval over large datasets.
+                The Multimodal Fashion Assistant is a retrieval and reasoning system built on two models: SigLIP2-base for embeddings and Qwen-VL (2B) for multimodal 
+                understanding. SigLIP2 generates image and text embeddings for similarity search, and Qwen-VL interprets the user query, extracts product attributes, 
+                and handles reasoning tasks. The system supports image search, text search, and combined multimodal search. Users can upload a product photo, 
+                describe an item, or refine the request through follow-up prompts. The backend then returns the closest matching products based on visual and semantic 
+                similarity. 
+                
+                In addition to fashion retrieval, the system can read text from images. It can extract items from a photographed shopping list by 
+                interpreting the text directly from the image, which allows it to act like an OCR-style component without using a separate OCR engine. 
+                
+                This project is built as a practical and fast backend module. It requires no dedicated front end and focuses on accurate search, flexible input handling,
+                and efficient reasoning over fashion data.
              </p>
 
               
@@ -410,171 +418,92 @@
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-6 col-md-6 portfolio-item filter-ts">
             <div class="portfolio-wrap">
-              <img src="assets/img/projects/distance_measurement (1).PNG" class="img-fluid" alt="">
+              <img src="M_Dendogram_NIRS_measures.png" class="img-fluid" alt="">
               <p></p>
-              <p class="text-center"><strong>Distance Measurement from Camera and Determination of the Position of a Traffic Sign </strong></p>
-
-              <ul class="">
-                <li>The algorithm of depth measurement using a stereo camera was used.</li>
-                <li>Two sequential images were selected from several close imgaes captured with Ladibug 360 camera . </li>
-                <li>Depth was calculated considering the two sequential images as 'left' and 'right' images of a stereo camera. </li>
-                <li>The two camera positions were given and from the depth calculation and also calculating x, y co-ordinate the latitude and longitude of the sign were calculated. </li>
-                <li>QGIS was used to get the groundtruth of the traffic sign and to compare with the predicted result.</li>
-                <li>Later the value of yaw, head and pitch were also used to get the rotational angle matrix and get a better result.</li>
-              </ul>
+              <p class="text-center"><strong> Time Series Covariance Pattern Analysis </strong></p>
+              <p>
+                 This repository provides tools for analyzing time-series EEG and physiological signals using semi-supervised machine learning. 
+                 It focuses on uncovering hidden covariance patterns, performing variable clustering, and conducting subgroup analysis based on signal characteristics 
+                 across different resolutions. The code includes preprocessing, scaling, K-means and hierarchical clustering, PCA, and RAP-based segmentation, 
+                 enabling researchers to explore complex temporal relationships and discover meaningful signal patterns. This work has been published in 
+                 MDPI's Bioengineering.
+              </p>
               <div class="portfolio-links">
-                <a href="https://github.com/Abrar-Islam-Oitijjho/Distance-Measurement-Using-Stereo-Vision-Algorithm/raw/main/traffic_sign_position_determination.pptx" target="_blank" title="Presentation"><i class="bx bx-file-blank"></i></a>
-                <a href="assets/img/projects/distance_measurement.PNG" data-gall="portfolioGallery" class="venobox" title="Distance Measurement from Camera and Determination of the Postion of a Traffic Sign"> <i class="bx bx-plus"></i></a>
-                <a href="https://github.com/Abrar-Islam-Oitijjho/Distance-Measurement-Using-Stereo-Vision-Algorithm" target="_blank" title="Source Code"><i class="bx bxl-github"></i></a>
+                <a href="https://www.mdpi.com/1424-8220/25/3/908" target="_blank" title="Associated Publication"><i class="bx bx-file-blank"></i></a>
+                <a href="assets/img/projects/mfa_flow_chart2.png" data-gall="portfolioGallery" class="venobox" title="AHC Dendrogram of Full Data (NIRS measures)"> <i class="bx bx-plus"></i></a>
+                <a href="https://github.com/Abrar-Islam-Oitijjho/Time-Series-Covariance-Pattern-Analysis" target="_blank" title="Github Repo"><i class="bx bxl-github"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-6 col-md-6 portfolio-item filter-ts">
             <div class="portfolio-wrap">
-              <img src="assets/img/projects/pointcloud.PNG" class="img-fluid" alt="">
+              <img src="assets/img/projects/acf_pacf_ordered.jpg" class="img-fluid" alt="">
               <p></p>
-              <p class="text-center"><strong>Creating 3-D point Cloud Using Visual SLAM Algorithm, RTAB-Map API System and Zed sdk</strong></p>
+              <p class="text-center"><strong>ARIMA Modeling on EEG Time-Series Data</strong></p>
 
-              <ul class="">
-                <li>At first, CNN SLAM was used to merge with the monocular depth prediction and after fusing tried to create point cloud.</li>
-                <li>After that, an interest was taken into PUTSLAM and tried to work with it .</li>
-                <li>Finally, RTAB-Map was used to create the 3-D point cloud as previous both methods were too old to work with. </li>
-                <li>Point Cloud was created from stereo and RGB-D images and with the respective calibration data that were collected from open sources in RTAB-Map </li>
-                <li>Later, RANSAC algorithm was used to check the quality of the point cloud and the algorithm was successfully able to differentiate planes in the point cloud hence proving the promising quality.</li>
-                <li>Generating data from ZED2 camera, getiing known to the zed2-sdk usage, collecting the calibration data and looking forward to further research. </li>
-              </ul>
+              <p>
+                This project builds a full ARIMA-based time-series analysis pipeline for EEG time series, ICP, AMP, and RAP signals. It runs stationarity checks, 
+                performs ARIMA modeling, generates residual diagnostics, plots ACF and PACF of residuals, and evaluates differences between clean and artifact-affected 
+                segments. The workflow processes every patient and every physiological parameter, produces plots and summary tables, and stores all metrics for later 
+                statistical comparison. The goal is to characterize RAP behavior, identify artifact patterns, and support downstream modeling of cerebral compensatory 
+                reserve in TBI data. The project offers a streamlined workflow for researchers and practitioners to extract meaningful insights from complex 
+                EEG time series datasets. This work has been published in MDPI's Sensors. 
+              </p>
               <div class="portfolio-links">
-                <a href="https://github.com/Abrar-Islam-Oitijjho/Creating-Pointcloud/tree/main/Research" target="_blank" title="Research"><i class="bx bx-file-blank"></i></a>
-                <a href="assets/img/projects/pointcloud.PNG" data-gall="portfolioGallery" class="venobox" title="Creating 3-D point Cloud Using Visual SLAM Algorithm and RTAB-Map API System"> <i class="bx bx-plus"></i></a>
-                <a href="https://github.com/Abrar-Islam-Oitijjho/Creating-Pointcloud" target="_blank" title="Source Code"><i class="bx bxl-github"></i></a>
+                <a href="https://www.mdpi.com/1424-8220/25/2/586" target="_blank" title="Associated Publication"><i class="bx bx-file-blank"></i></a>
+                <a href="assets/img/projects/acf_pacf_ordered.jpg" data-gall="portfolioGallery" class="venobox" title="ACF and PACF Plots of Residuals After ARIMA"> <i class="bx bx-plus"></i></a>
+                <a href="https://github.com/Abrar-Islam-Oitijjho/ARIMA-Modeling-on-EEG-Time-Series-Data" target="_blank" title="Github Repo"><i class="bx bxl-github"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-6 col-md-6 portfolio-item filter-cv">
             <div class="portfolio-wrap">
-              <img src="assets/img/projects/license_plate_recognition_1.PNG" class="img-fluid" alt="">
+              <img src="assets/img/projects/stacked_retina_oct.png" class="img-fluid" alt="">
               <p></p>
-              <p class="text-center"><strong>License Plate Recognition System with Speech Recognition Feature and GUI Platform</strong></p>
-              <ul class="">
-                <li>A GUI platform was developed in Matlab that can take an image as input containing license plate and illustrate the number written on the license plate.</li>
-                <li>The input image can be entered manually choosing the image number by pressing a button or speaking the image number.</li>
-                <li>The speaking feature was performed depending on the applied voice recognition method which was constructed based on a self-developed neural network model.</li>
-                <li>The recognition of license plate number was performed depending on the sequences image processing techniques and comparison of correlation values.</li>
-                <li>For the training of the neural network model in voice recognition section, self developed data was built which was collected from different individuals to get more robust model.</li>
-                <li>The image processing section includes edge detection, plate extraction and letter separation techniques accordingly and finally correlation was applied for comparing the extracted license plate with the known digit images(0-9), thus getting the numbers on the license plate .</li>
-              </ul>
+              <p class="text-center"><strong>Retinal OCT Disease Classification</strong></p>
+              <p>
+                This project develops a deep learning pipeline for classifying retinal OCT images into four disease categories. The workflow includes sample 
+                visualization, image preprocessing, stratified train–test splitting, and real-time data augmentation to improve robustness. A pretrained VGG19 
+                backbone is used as a fixed feature extractor, and a custom CNN classifier head is added to learn discriminative features specific to retinal pathology. 
+                The model is trained with checkpointing to preserve the best weights, and training dynamics are monitored through accuracy and loss curves. 
+                Final evaluation on a held-out test set provides a clear measure of real-world performance, demonstrating an effective end-to-end solution for automated 
+                retinal disease detection.
+
+                The proposed self-developed CNN model is comparatively smaller and simpler along with the use of Lime that introduces Explainable AI to the study and 
+                helps to increase the interpretability of the model. This addition will be an asset to the medical experts for getting major and detailed information and
+                 will help them in making final decisions and will also reduce the opacity and vulnerability of the conventional deep learning models.This work has been 
+                 published in IEEE Conference.
+              </p>
               <div class="portfolio-links">
-              	<a href="https://github.com/Abrar-Islam-Oitijjho/Lincense-Plate-Recognition/raw/main/License%20Plate%20Recognition%20System%20With%20Speech%20Recognition%20Feature%20and%20GUI%20Platform.pdf" target="_blank" title="Paper"><i class="bx bx-file-blank"></i></a>
-                <a href="assets/img/projects/license_plate_recognition.PNG" data-gall="portfolioGallery" class="venobox" title="License Plate Recognition System with Speech Recognition Feature and GUI Platform"> <i class="bx bx-plus"></i></a>
-                <a href="https://github.com/Abrar-Islam-Oitijjho/Lincense-Plate-Recognition" target="_blank" title="Source Code"><i class="bx bxl-github"></i></a>
+              	<a href="https://ieeexplore.ieee.org/abstract/document/9718400" target="_blank" title="Associated Publication"><i class="bx bx-file-blank"></i></a>
+                <a href="assets/img/projects/stacked_retina_oct.png" data-gall="portfolioGallery" class="venobox" title="Model Explanation with Xai (CNV, DME, DRUSEN, Normal)"> <i class="bx bx-plus"></i></a>
+                <a href="https://github.com/Abrar-Islam-Oitijjho/Retinal-OCT-Disease-Classification" target="_blank" title="Github Repo"><i class="bx bxl-github"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-6 col-md-6 portfolio-item filter-cv">
             <div class="portfolio-wrap">
-              <img src="assets/img/projects/selfdriving.PNG" class="img-fluid" alt="">
+              <img src="assets/img/projects/action_recognition_model_diagram.JPG" class="img-fluid" alt="">
               <p></p>
-              <p class="text-center"><strong>Implemeting a 4-Digit Calculator Using 8051 Micro-controller</strong></p>
+              <p class="text-center"><strong>Action Recognition of CS:GO Counter-Strike</strong></p>
               <ul class="">
-                <li>A calculator was created with the help of 8051 Microcontroller that can add, subtract, multiply, and divide two inputs which  were of 4 digits each i.e. 16 binary bits. </li>
-                <li>In the case of subtraction, this calculator can display negative results.</li>
-                <li>MIDE-51 was used to program the software in Assembly language, while Proteus was used to test the code before it was implemented in the hardware kit</li>
-                <li>The keypad will be used to enter the information, and the result will be presented on the LCD. </li>
+                This project focuses on real-time action recognition in Counter Strike: Global Offensive. The system identifies four key in-game events — kill, death, 
+                smoke, and no action — using multiple deep learning architectures. Five transfer learning models (VGG16, Xception, InceptionV3, Inception-ResNet-V2, 
+                ResNet152-V2) are evaluated alongside a custom neural network to determine the best performer.
+
+                The pipeline is designed to classify actions frame by frame, support real-time inference, and generate structured outputs for downstream prediction 
+                models. It also includes an automated module for collecting and processing gameplay video, making it easier to scale datasets and measure action 
+                frequency across matches.This work has been published in IEEE Conference. 
               </ul>
               <div class="portfolio-links">
-                <a href="assets/img/projects/selfdriving.PNG" data-gall="portfolioGallery" class="venobox" title="Self Driving Siumulation"> <i class="bx bx-plus"></i></a>
-                <a href="https://github.com/CSE474/SelfDriving_Implementation" target="_blank" title="Source Code"><i class="bx bxl-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/pfl.PNG" class="img-fluid" alt="">
-              <p></p>
-              <p class="text-center"><strong>Developing an Automatic Power Factor Improvement System</strong></p>
-              <ul class="">
-                <li>A system was developed that can measure the power factor of an AC system having inductive loads and display it on an LCD. </li>
-                <li>Initially, the design was implemented on proteus for the software simulation and clairification purpose. </li>
-                <li>Later, with the help of an Arduino module the hardware implimentation was done according to the proteus design .</li>
-                <li>The system can automatically try to improve the power factor using capacitor banks if the power factor value is found to be less than a preset value. The improvement continues until the power factor is above a predetermined value.</li>
-              </ul>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/pfl.PNG" data-gall="portfolioGallery" class="venobox" title="Self Driving Siumulation"> <i class="bx bx-plus"></i></a>
-                <a href="https://github.com/CSE474/SelfDriving_Implementation" target="_blank" title="Source Code"><i class="bx bxl-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/DLD_calculator.jpg" class="img-fluid" alt="">
-              <p></p>
-              <p class="text-center"><strong>Implementing a 4 bit Arithmetic Logic Unit (ALU) Using Basic Logic Gates</strong></p>
-              <ul class="">
-                <li>At first, proteus was used to design the circuit and check if the expected result could be obtained.</li>
-                <li>Secondly, depending on the designed circuit, PCB design was built. </li>
-                <li>Finally, with the help of the PCB design and basic logic gate ICs the hardware implimentation was done .</li>
-                <li>The ALU can perform addition, subtraction, multiplication, and division operation between two 4-bit inputs.</li>
-              </ul>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/DLD_calculator.jpg" data-gall="portfolioGallery" class="venobox" title="Implementing a 4 bit Arithmetic Logic Unit (ALU) Using Basic Logic Gates"> <i class="bx bx-plus"></i></a>
-                <a href="https://github.com/Abrar-Islam-Oitijjho/Implementing-a-4-bit-Arithmetic-Logic-Unit-ALU-Using-Basic-Logic-Gates" target="_blank" title="Source Code"><i class="bx bxl-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/Genosis.PNG" class="img-fluid" alt="">
-              <p></p>
-              <p class="text-center"><strong>Creating Smart Hotel menu using Python GUI</strong></p>
-              <ul class="">
-                <li>A web application where user can save universities, register for consultations and check their saved universities along with previous consultations, assigned consultant, and consultation status.</li>
-                <li>A functional admin panel with restricted access(only admin can access) section where admin can 
-                  <ul>
-                    <li>1. Add University </li>
-                    <li>2. Remove University</li>
-                    <li>3. Modify University </li>
-                    <li>4. Change consultation status</li>
-                    <li>5. Assign consultant</li> 
-                  </ul>
-                </li>
-              </ul>
-              <div class="portfolio-links">
-                <a href="assets/img/projects/Genosis.PNG" data-gall="portfolioGallery" class="venobox" title="Geonosis Study Abroad"> <i class="bx bx-plus"></i></a>
-                <a href="https://github.com/Sakibapon/GeonosisStudyAbroad.github.io" target="_blank" title="Source Code"><i class="bx bxl-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/car.PNG" class="img-fluid" alt="">
-              <p></p>
-              <p class="text-center"><strong>Advanced Car Parts</strong></p>
-              <ul class="">
-                <li>A web application where user can request services and check their previous request history with status(pending, ongoing, or done)</li>
-                <li>A functional admin panel with restricted access(only admin can access) section where admin can
-                  <ul>
-                    <li>1.Add Services</li>
-                    <li>2. Delete any existing Services</li>
-                    <li>3. Update the state of customers order.</li>
-
-                  </ul>
-                </li>
-              </ul>
-              <div class="portfolio-links">
-                <!--
-                  <a href="AdvancedCars.html" target="_blank" title="Source Code"><i class="bx bx-book-content"></i></a>
-                -->
-                <a href="assets/img/projects/car.PNG" data-gall="portfolioGallery" class="venobox" title="Advanced Car Parts"> <i class="bx bx-plus"></i></a>
-                <a href="https://github.com/Sakibapon/GeonosisStudyAbroad.github.io" target="_blank" title="Source Code"><i class="bx bxl-github"></i></a>
+                <a href="https://ieeexplore.ieee.org/abstract/document/9608407" target="_blank" title="Associated Publication"><i class="bx bx-file-blank"></i></a>
+                <a href="assets/img/projects/action_recognition_model_diagram.JPG" data-gall="portfolioGallery" class="venobox" title="System model diagram"> <i class="bx bx-plus"></i></a>
+                <a href="https://github.com/Abrar-Islam-Oitijjho/Action-Recognition-of-CSGO-Counter-Strike" target="_blank" title="Github Repo"><i class="bx bxl-github"></i></a>
               </div>
             </div>
           </div>
