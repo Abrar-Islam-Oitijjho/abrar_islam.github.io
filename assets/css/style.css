@@ -214,6 +214,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-position: center;
   animation: heroSlider 12s infinite;
+  transition: background-image 1.2s ease-in-out;
 }
 
 @keyframes heroSlider {
@@ -227,6 +228,8 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url("../img/iut_1.jpg");
   }
 }
+
+
 
 
 #hero:before {
@@ -268,11 +271,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 3px solid #149ddd;
 }
 
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-}
+
 
 @media (max-width: 768px) {
   #hero h1 {
@@ -1173,6 +1172,8 @@ body.dark-mode {
   background: #149ddd !important;
 }
 
+
+
 /* Resume section */
 .dark-mode .resume .resume-title {
   color: #e6e6e6 !important;
@@ -1187,6 +1188,8 @@ body.dark-mode {
   background: #2d333b !important;
   color: #e6e6e6 !important;
 }
+
+
 
 /* Portfolio filters */
 .dark-mode #portfolio-flters {
@@ -1254,11 +1257,7 @@ body.dark-mode {
 }
 
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1500px !important;
-  }
-}
+
 
 
 .resume-item a {
