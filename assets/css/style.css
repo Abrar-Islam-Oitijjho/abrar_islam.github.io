@@ -211,9 +211,23 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/iut_1.jpg")  center;
   background-size: cover;
+  background-position: center;
+  animation: heroSlider 12s infinite;
 }
+
+@keyframes heroSlider {
+  0% {
+    background-image: url("../img/iut_1.jpg");
+  }
+  50% {
+    background-image: url("../img/uofm.jpg");
+  }
+  100% {
+    background-image: url("../img/iut_1.jpg");
+  }
+}
+
 
 #hero:before {
   content: "";
