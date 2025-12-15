@@ -213,7 +213,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   background-size: cover;
   background-position: center;
-  animation: heroSlider 12s infinite;
+  animation: heroSlider 36s infinite;
   transition: background-image 1.2s ease-in-out;
 }
 
@@ -1255,10 +1255,6 @@ body.dark-mode {
 .dark-mode .skill-card h5 {
   color: #c9d1d9 !important;
 }
-
-
-
-
 
 .resume-item a {
     color: #0d5c8a; /* darker blue for light mode */
