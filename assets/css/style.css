@@ -218,13 +218,13 @@ h1, h2, h3, h4, h5, h6 {
 
 @keyframes heroSlider {
   0%, 45% {
-    background-image: url("../img/iut_1.jpg");
-  }
-  50%, 95% {
     background-image: url("../img/uofm.jpg");
   }
-  100% {
+  50%, 95% {
     background-image: url("../img/iut_1.jpg");
+  }
+  100% {
+    background-image: url("../img/uofm.jpg");
   }
 }
 
