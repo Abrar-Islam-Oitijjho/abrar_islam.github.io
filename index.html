@@ -395,16 +395,15 @@
 
           <div class="col-lg-6 col-md-6 portfolio-item filter-genai">
             <div class="portfolio-wrap">
-              <img src="assets/img/projects/mfa_flow_chart2.png" class="img-fluid" alt="">
+              <img src="assets/img/projects/Agent_workflow.png" class="img-fluid" alt="">
               <p></p>
               <p class="text-center"><strong>Multimodal Fashion Assistant</strong></p>
 
               <p>
-                Built a multimodal retrieval and reasoning backend for fashion search using SigLIP2-base embeddings and Qwen-VL (2B). 
-                The system supports image, text, and combined queries, allowing users to retrieve products by uploading photos, describing items, or 
-                refining intent through follow-up prompts. Implemented semantic and visual similarity search to return closest matching products with attribute-level 
-                reasoning. Extended the pipeline to extract items directly from photographed shopping lists using vision–language understanding without a separate 
-                OCR engine. Designed as a fast, modular backend focused on accurate retrieval, flexible inputs, and low-latency reasoning.
+                • Building a LangGraph-based multimodal AI agent using SigLIP2 embeddings, FAISS vector search, and Qwen-VL reasoning for text, image, and image-text fashion product retrieval. 
+                • Improved Top-5 retrieval precision from 59% to 81% by adding intent detection, structured query extraction, dynamic image/text routing, candidate filtering, self-checking, and retry logic. 
+                • Implemented fast and deep retrieval modes, with the deep mode using an LLM/VLM judge to rerank top FAISS candidates, improving Precision@5 from 81% to 87% on complex multimodal queries.
+                • Developed backend workflows and FastAPI REST endpoints to serve retrieval, reasoning, and response-generation pipelines for online deployment.
              </p>
 
               
